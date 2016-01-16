@@ -1,0 +1,10 @@
+finra_assignment-postgresql:
+  container_name: finra_assignment-postgresql
+  image: postgres:9.4.5
+  # volumes:
+  #   - ~/volumes/jhipster/finra_assignment/postgresql/:/var/lib/postgresql/
+  environment:
+    - POSTGRES_USER=finra_assignment
+    - POSTGRES_PASSWORD=
+  ports:
+    - "5432:5432"
