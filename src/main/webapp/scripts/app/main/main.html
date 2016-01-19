@@ -1,41 +1,1168 @@
 <div ng-cloak>
-    <div class="row">
-        <div class="col-md-4">
-            <span class="hipster img-responsive img-rounded"></span>
-        </div>
-        <div class="col-md-8">
-            <h1>Welcome, Java Hipster!</h1>
-            <p class="lead">This is your homepage</p>
+    <head>
+        <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+        <style type="text/css">ul.lst-kix_list_20-2 {
+            list-style-type: none
+        }
 
-            <div ng-switch="isAuthenticated()">
-                <div class="alert alert-success" ng-switch-when="true">
-                    You are logged in as user "{{account.login}}".
-                </div>
+        ul.lst-kix_list_20-3 {
+            list-style-type: none
+        }
 
-                <div class="alert alert-warning" ng-switch-when="false">
-                    If you want to <a class="alert-link" href="#/login">sign in</a>, you can try the default accounts:<br/>- Administrator (login="admin" and password="admin") <br/>- User (login="user" and password="user").
-                </div>
+        ul.lst-kix_list_20-4 {
+            list-style-type: none
+        }
 
-                <div class="alert alert-warning" ng-switch-when="false">
-                    You don't have an account yet? <a class="alert-link" href="#/register">Register a new account</a>
-                </div>
-            </div>
+        ul.lst-kix_list_20-5 {
+            list-style-type: none
+        }
 
-            <p>
-                If you have any question on JHipster:
-            </p>
+        ul.lst-kix_list_20-6 {
+            list-style-type: none
+        }
 
-            <ul>
-                <li><a href="http://jhipster.github.io/" target="_blank">JHipster homepage</a></li>
-                <li><a href="http://stackoverflow.com/tags/jhipster/info" target="_blank">JHipster on Stack Overflow</a></li>
-                <li><a href="https://github.com/jhipster/generator-jhipster/issues?state=open" target="_blank">JHipster bug tracker</a></li>
-                <li><a href="https://gitter.im/jhipster/generator-jhipster" target="_blank">JHipster public chat room</a></li>
-                <li><a href="https://twitter.com/java_hipster" target="_blank" >contact @java_hipster on Twitter</a></li>
-            </ul>
+        ul.lst-kix_list_20-7 {
+            list-style-type: none
+        }
 
-            <p>
-             <span>If you like JHipster, don't forget to give us a star on </span>&nbsp;<a href="https://github.com/jhipster/generator-jhipster" target="_blank">Github</a>!
-            </p>
-        </div>
+        ul.lst-kix_list_20-8 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_20-0 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_20-1 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_1f-0 > li:before {
+            content: "\0025cf  "
+        }
+
+        .lst-kix_list_1f-1 > li:before {
+            content: "\0025cb  "
+        }
+
+        .lst-kix_list_1f-2 > li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_list_1f-3 > li:before {
+            content: "\0025cf  "
+        }
+
+        .lst-kix_list_1f-6 > li:before {
+            content: "\0025cf  "
+        }
+
+        .lst-kix_list_1f-4 > li:before {
+            content: "\0025cb  "
+        }
+
+        .lst-kix_list_1f-8 > li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_list_1f-5 > li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_list_1f-7 > li:before {
+            content: "\0025cb  "
+        }
+
+        .lst-kix_8r50k9q6h7rh-3 > li:before {
+            content: "\0025cf  "
+        }
+
+        .lst-kix_8r50k9q6h7rh-2 > li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_8r50k9q6h7rh-4 > li:before {
+            content: "\0025cb  "
+        }
+
+        .lst-kix_8r50k9q6h7rh-1 > li:before {
+            content: "\0025cb  "
+        }
+
+        .lst-kix_8r50k9q6h7rh-5 > li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_8r50k9q6h7rh-7 > li:before {
+            content: "\0025cb  "
+        }
+
+        .lst-kix_8r50k9q6h7rh-0 > li:before {
+            content: "\0025cf  "
+        }
+
+        .lst-kix_8r50k9q6h7rh-6 > li:before {
+            content: "\0025cf  "
+        }
+
+        ul.lst-kix_list_1f-0 {
+            list-style-type: none
+        }
+
+        .lst-kix_8r50k9q6h7rh-8 > li:before {
+            content: "\0025a0  "
+        }
+
+        ul.lst-kix_list_1f-1 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_1f-2 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_23-6 > li:before {
+            content: "\0025cf  "
+        }
+
+        .lst-kix_list_23-3 > li:before {
+            content: "\0025cf  "
+        }
+
+        .lst-kix_list_23-7 > li:before {
+            content: "\0025cb  "
+        }
+
+        .lst-kix_list_23-2 > li:before {
+            content: "\0025a0  "
+        }
+
+        ul.lst-kix_n857p6pn6v32-8 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_n857p6pn6v32-6 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_n857p6pn6v32-7 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_23-0 > li:before {
+            content: "\0025cf  "
+        }
+
+        .lst-kix_list_23-8 > li:before {
+            content: "\0025a0  "
+        }
+
+        ul.lst-kix_n857p6pn6v32-4 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_n857p6pn6v32-5 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_23-1 > li:before {
+            content: "\0025cb  "
+        }
+
+        ul.lst-kix_n857p6pn6v32-2 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_n857p6pn6v32-3 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_n857p6pn6v32-0 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_n857p6pn6v32-1 {
+            list-style-type: none
+        }
+
+        .lst-kix_n857p6pn6v32-1 > li:before {
+            content: "\0025cb  "
+        }
+
+        .lst-kix_n857p6pn6v32-2 > li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_n857p6pn6v32-4 > li:before {
+            content: "\0025cb  "
+        }
+
+        .lst-kix_n857p6pn6v32-3 > li:before {
+            content: "\0025cf  "
+        }
+
+        .lst-kix_n857p6pn6v32-5 > li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_list_23-4 > li:before {
+            content: "\0025cb  "
+        }
+
+        .lst-kix_list_23-5 > li:before {
+            content: "\0025a0  "
+        }
+
+        ul.lst-kix_list_22-0 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_4y7r41elxklf-5 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_22-1 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_4y7r41elxklf-4 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_22-2 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_4y7r41elxklf-7 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_22-3 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_4y7r41elxklf-6 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_22-4 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_4y7r41elxklf-1 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_22-5 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_4y7r41elxklf-0 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_22-6 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_4y7r41elxklf-3 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_22-2 > li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_list_22-6 > li:before {
+            content: "\0025a0  "
+        }
+
+        ul.lst-kix_list_22-7 {
+            list-style-type: none
+        }
+
+        .lst-kix_n857p6pn6v32-6 > li:before {
+            content: "\0025cf  "
+        }
+
+        ul.lst-kix_4y7r41elxklf-2 {
+            list-style-type: none
+        }
+
+        .lst-kix_jgo18cbktw0p-0 > li:before {
+            content: "\0025cf  "
+        }
+
+        ul.lst-kix_4y7r41elxklf-8 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_22-0 > li:before {
+            content: "\0025cf  "
+        }
+
+        .lst-kix_list_22-8 > li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_n857p6pn6v32-8 > li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_jgo18cbktw0p-4 > li:before {
+            content: "\0025cb  "
+        }
+
+        ul.lst-kix_list_22-8 {
+            list-style-type: none
+        }
+
+        .lst-kix_jgo18cbktw0p-2 > li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_list_22-4 > li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_jgo18cbktw0p-8 > li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_jgo18cbktw0p-6 > li:before {
+            content: "\0025cf  "
+        }
+
+        .lst-kix_list_20-8 > li:before {
+            content: "\0025a0  "
+        }
+
+        ul.lst-kix_list_21-1 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_21-2 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_21-3 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_21-4 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_20-0 > li:before {
+            content: "\0025cf  "
+        }
+
+        ul.lst-kix_list_21-5 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_21-6 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_21-7 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_21-8 {
+            list-style-type: none
+        }
+
+        .lst-kix_4y7r41elxklf-0 > li:before {
+            content: "\0025cf  "
+        }
+
+        ul.lst-kix_8r50k9q6h7rh-8 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_8r50k9q6h7rh-6 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_8r50k9q6h7rh-7 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_8r50k9q6h7rh-4 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_21-0 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_8r50k9q6h7rh-5 {
+            list-style-type: none
+        }
+
+        .lst-kix_4y7r41elxklf-2 > li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_list_20-6 > li:before {
+            content: "\0025a0  "
+        }
+
+        ul.lst-kix_jgo18cbktw0p-1 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_8r50k9q6h7rh-2 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_jgo18cbktw0p-2 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_8r50k9q6h7rh-3 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_8r50k9q6h7rh-0 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_jgo18cbktw0p-0 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_8r50k9q6h7rh-1 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_20-4 > li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_4y7r41elxklf-4 > li:before {
+            content: "\0025cb  "
+        }
+
+        .lst-kix_4y7r41elxklf-8 > li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_list_20-2 > li:before {
+            content: "\0025a0  "
+        }
+
+        ul.lst-kix_jgo18cbktw0p-7 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_jgo18cbktw0p-8 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_jgo18cbktw0p-5 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_jgo18cbktw0p-6 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_jgo18cbktw0p-3 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_jgo18cbktw0p-4 {
+            list-style-type: none
+        }
+
+        .lst-kix_4y7r41elxklf-6 > li:before {
+            content: "\0025cf  "
+        }
+
+        .lst-kix_d1oxqzx32taw-0 > li:before {
+            content: "\0025cf  "
+        }
+
+        .lst-kix_d1oxqzx32taw-1 > li:before {
+            content: "\0025cb  "
+        }
+
+        .lst-kix_d1oxqzx32taw-4 > li:before {
+            content: "\0025cb  "
+        }
+
+        .lst-kix_d1oxqzx32taw-2 > li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_d1oxqzx32taw-3 > li:before {
+            content: "\0025cf  "
+        }
+
+        .lst-kix_d1oxqzx32taw-8 > li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_list_21-8 > li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_d1oxqzx32taw-5 > li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_y8ivgme9gt65-0 > li:before {
+            content: "\0025cf  "
+        }
+
+        .lst-kix_d1oxqzx32taw-6 > li:before {
+            content: "\0025cf  "
+        }
+
+        .lst-kix_y8ivgme9gt65-1 > li:before {
+            content: "\0025cb  "
+        }
+
+        .lst-kix_d1oxqzx32taw-7 > li:before {
+            content: "\0025cb  "
+        }
+
+        .lst-kix_y8ivgme9gt65-3 > li:before {
+            content: "\0025cf  "
+        }
+
+        .lst-kix_y8ivgme9gt65-4 > li:before {
+            content: "\0025cb  "
+        }
+
+        .lst-kix_list_21-0 > li:before {
+            content: "\0025cf  "
+        }
+
+        .lst-kix_list_21-2 > li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_y8ivgme9gt65-2 > li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_y8ivgme9gt65-6 > li:before {
+            content: "\0025cf  "
+        }
+
+        .lst-kix_list_21-1 > li:before {
+            content: "\0025cb  "
+        }
+
+        .lst-kix_list_21-6 > li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_y8ivgme9gt65-5 > li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_list_21-7 > li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_list_21-5 > li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_y8ivgme9gt65-7 > li:before {
+            content: "\0025cb  "
+        }
+
+        .lst-kix_y8ivgme9gt65-8 > li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_list_21-4 > li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_list_21-3 > li:before {
+            content: "\0025a0  "
+        }
+
+        ul.lst-kix_list_23-0 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_23-1 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_23-2 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_23-3 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_23-4 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_23-5 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_23-6 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_23-7 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_23-8 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_22-3 > li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_list_22-5 > li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_n857p6pn6v32-7 > li:before {
+            content: "\0025cb  "
+        }
+
+        .lst-kix_list_22-1 > li:before {
+            content: "\0025cb  "
+        }
+
+        .lst-kix_list_22-7 > li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_n857p6pn6v32-0 > li:before {
+            content: "\0025cf  "
+        }
+
+        .lst-kix_jgo18cbktw0p-3 > li:before {
+            content: "\0025cf  "
+        }
+
+        .lst-kix_jgo18cbktw0p-1 > li:before {
+            content: "\0025cb  "
+        }
+
+        .lst-kix_jgo18cbktw0p-5 > li:before {
+            content: "\0025a0  "
+        }
+
+        ul.lst-kix_list_1f-3 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_1f-4 {
+            list-style-type: none
+        }
+
+        .lst-kix_jgo18cbktw0p-7 > li:before {
+            content: "\0025cb  "
+        }
+
+        ul.lst-kix_list_1f-5 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_1f-6 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_1f-7 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_1f-8 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_20-7 > li:before {
+            content: "\0025a0  "
+        }
+
+        ul.lst-kix_y8ivgme9gt65-7 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_y8ivgme9gt65-8 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_y8ivgme9gt65-5 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_y8ivgme9gt65-6 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_y8ivgme9gt65-3 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_y8ivgme9gt65-4 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_y8ivgme9gt65-1 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_y8ivgme9gt65-2 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_y8ivgme9gt65-0 {
+            list-style-type: none
+        }
+
+        .lst-kix_4y7r41elxklf-1 > li:before {
+            content: "\0025cb  "
+        }
+
+        .lst-kix_4y7r41elxklf-3 > li:before {
+            content: "\0025cf  "
+        }
+
+        .lst-kix_list_20-5 > li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_4y7r41elxklf-5 > li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_4y7r41elxklf-7 > li:before {
+            content: "\0025cb  "
+        }
+
+        .lst-kix_list_20-1 > li:before {
+            content: "\0025cb  "
+        }
+
+        .lst-kix_list_20-3 > li:before {
+            content: "\0025a0  "
+        }
+
+        ul.lst-kix_d1oxqzx32taw-6 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_d1oxqzx32taw-5 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_d1oxqzx32taw-4 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_d1oxqzx32taw-3 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_d1oxqzx32taw-2 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_d1oxqzx32taw-1 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_d1oxqzx32taw-0 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_d1oxqzx32taw-8 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_d1oxqzx32taw-7 {
+            list-style-type: none
+        }
+
+        ol {
+            margin: 0;
+            padding: 0
+        }
+
+        .c19 {
+            color: #9ca000;
+            font-weight: normal;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 8pt;
+            font-family: "Arial";
+            font-style: normal
+        }
+
+        .c16 {
+            color: #000080;
+            font-weight: bold;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 8pt;
+            font-family: "Arial";
+            font-style: normal
+        }
+
+        .c18 {
+            color: #000080;
+            font-weight: normal;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 8pt;
+            font-family: "Arial";
+            font-style: normal
+        }
+
+        .c0 {
+            margin-left: 18pt;
+            padding-top: 14pt;
+            padding-bottom: 4pt;
+            text-indent: -18pt;
+            direction: ltr
+        }
+
+        .c15 {
+            font-size: 16pt;
+            font-family: "Verdana";
+            color: #000080;
+            font-weight: bold
+        }
+
+        .c6 {
+            margin-left: 36pt;
+            padding-top: 8pt;
+            padding-left: 0pt;
+            direction: ltr
+        }
+
+        .c1 {
+            font-size: 13pt;
+            font-style: normal;
+            color: #000000;
+            font-weight: bold
+        }
+
+        .c4 {
+            margin-left: 72pt;
+            padding-top: 8pt;
+            padding-left: 0pt;
+            direction: ltr
+        }
+
+        .c20 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.0;
+            text-align: left
+        }
+
+        .c7 {
+            margin-left: 36pt;
+            padding-left: 0pt;
+            direction: ltr
+        }
+
+        .c5 {
+            margin-left: 18pt;
+            text-indent: -18pt;
+            direction: ltr
+        }
+
+        .c14 {
+            font-size: 13pt;
+            font-style: normal;
+            font-weight: bold
+        }
+
+        .c9 {
+            padding-top: 18pt;
+            padding-bottom: 4pt
+        }
+
+        .c11 {
+            padding-top: 24pt;
+            padding-bottom: 6pt
+        }
+
+        .c17 {
+            width: 816px;
+            margin: 0 auto;
+            padding: 54pt 54pt 72pt 90pt
+        }
+
+        .c13 {
+            color: #000000;
+            font-size: 17pt
+        }
+
+        .c2 {
+            color: #000000;
+            font-size: 23pt
+        }
+
+        .c10 {
+            padding: 0;
+            margin: 0
+        }
+
+        .c3 {
+            background-color: #ffffff;
+            color: #222222
+        }
+
+        .c21 {
+            color: #000080;
+            font-size: 8pt
+        }
+
+        .c8 {
+            background-color: #ffffff
+        }
+
+        .c22 {
+            height: 10pt
+        }
+
+        .c12 {
+            direction: ltr
+        }
+
+        .title {
+            padding-top: 24pt;
+            color: #000000;
+            font-weight: bold;
+            font-size: 36pt;
+            padding-bottom: 6pt;
+            font-family: "Arial";
+            line-height: 1.0;
+            text-align: left
+        }
+
+        .subtitle {
+            padding-top: 18pt;
+            color: #666666;
+            font-size: 24pt;
+            padding-bottom: 4pt;
+            font-family: "Georgia";
+            line-height: 1.0;
+            font-style: italic;
+            text-align: left
+        }
+
+        li {
+            color: #000000;
+            font-size: 10pt;
+            font-family: "Arial"
+        }
+
+        p {
+            margin: 0;
+            color: #000000;
+            font-size: 10pt;
+            font-family: "Arial"
+        }
+
+        h1 {
+            padding-top: 6pt;
+            color: #000080;
+            font-weight: bold;
+            font-size: 12pt;
+            padding-bottom: 3pt;
+            font-family: "Arial";
+            line-height: 1.0;
+            text-align: left
+        }
+
+        h2 {
+            padding-top: 6pt;
+            color: #000080;
+            font-weight: bold;
+            font-size: 10pt;
+            padding-bottom: 3pt;
+            font-family: "Arial";
+            line-height: 1.0;
+            text-align: left
+        }
+
+        h3 {
+            padding-top: 6pt;
+            color: #a09c00;
+            font-size: 10pt;
+            padding-bottom: 3pt;
+            font-family: "Arial";
+            line-height: 1.0;
+            font-style: italic;
+            text-align: left
+        }
+
+        h4 {
+            padding-top: 6pt;
+            color: #000080;
+            font-size: 10pt;
+            padding-bottom: 3pt;
+            font-family: "Arial";
+            line-height: 1.0;
+            text-align: left
+        }
+
+        h5 {
+            padding-top: 12pt;
+            color: #000000;
+            font-size: 11pt;
+            padding-bottom: 3pt;
+            font-family: "Arial";
+            line-height: 1.0;
+            text-align: left
+        }
+
+        h6 {
+            padding-top: 12pt;
+            color: #000000;
+            font-size: 11pt;
+            padding-bottom: 3pt;
+            font-family: "Arial";
+            line-height: 1.0;
+            font-style: italic;
+            text-align: left
+        }</style>
+    </head>
+    <div class="c8 c17">
+    <div><p class="c20 c12 c22"><span class="c21"></span></p></div>
+    <h1 class="c5 c11"><a id="h.fgjyrq3mdv8x" name="h.fgjyrq3mdv8x"></a><span class="c2">Ryan Kumsher, CSM</span></h1>
+    <h2 class="c5 c9"><a id="h.lbot4tem0md7" name="h.lbot4tem0md7"></a><span class="c13">Career Highlights</span></h2>
+    <p class="c12"><span>Over 6 years of experience as a Software Engineer with experience in the full life cycle of the software development process and has over five years of experience with the Scrum process as a Certified ScrumMaster. &nbsp;Currently at 5AM Solutions as the Tech Lead on the AmpliSeq project. &nbsp;Has a well-established history of delivering high quality software products while meeting deadlines and budgets with a passion toward code quality. &nbsp;Previously served as Lead Developer on an Innovative Research and Development (IR&amp;D) project, which brought collaborative analytics to the SIGINT and geospatial domains. &nbsp;At General Dynamics, served as the Lead Developer on a mission-critical system supporting the Intelligence Community.</span>
+    </p>
+    <h2 class="c5 c9"><a id="h.l2eb5z9609rh" name="h.l2eb5z9609rh"></a><span class="c13">Relevant Professional Experience</span>
+    </h2>
+    <h3 class="c0"><a id="h.ncds4bpw1gr1" name="h.ncds4bpw1gr1"></a><span class="c1">5AM Solutions, Inc. (Rockville, MD), Software Engineer II &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;September 2011 - Current</span>
+    </h3>
+    <ul class="c10 lst-kix_8r50k9q6h7rh-0 start">
+        <li class="c6"><span class="c3">Tech Lead on Ion AmpliSeq Designer &ndash; a cloud based primer design tool that creates custom, ultrahigh-multiplex primer pools for Ion semiconductor sequencing</span>
+        </li>
+    </ul>
+    <ul class="c10 lst-kix_8r50k9q6h7rh-1 start">
+        <li class="c4"><span class="c3">Designed and developed software components in collaboration with the 5AM and Thermo Fisher teams, using best practices that include continuous integration, automated unit and integration tests, and code reviews. The project uses Java EE, Struts2, Oracle, and JavaScript to present a web-based frontend to the Life Technologies assay design pipeline.</span>
+        </li>
+        <li class="c4"><span class="c3">Responsible for all software development aspects of AmpliSeq including requirements, design, implementation, testing, and deployment.</span>
+        </li>
+        <li class="c4"><span class="c3">Maintained and improved efficiency of application deployed on Amazon Web Services (AWS). &nbsp;Optimized AWS configuration which resulted in a $364.17/month savings</span>
+        </li>
+        <li class="c4"><span class="c3">Participates in requirements gathering session with stakeholders and key product owners</span>
+        </li>
+        <li class="c4"><span class="c3">Demonstrates new features and application functionality to stakeholders and key product owners</span>
+        </li>
+        <li class="c4"><span class="c3">Lead technical working sessions with offshore development partners.</span></li>
+        <li class="c4"><span class="c3">Trained offshore developers onsite for 3 weeks in Bangalore, India</span></li>
+    </ul>
+    <ul class="c10 lst-kix_8r50k9q6h7rh-0">
+        <li class="c6"><span class="c3">Software Engineer for the United States Pharmacopeia Global Sample Acquisition project, a system for guiding and tracking the complex workflows throughout the lifecycle of a sample acquisition process. Was able to deliver high quality code on time within a very strict time frame.</span>
+        </li>
+        <li class="c6"><span class="c3">Software Engineer on the Blue Button+ project, a first-of-its-kind service to transform raw clinical health data into the Blue Button+ standard format. Through this pilot initiative, Pfizer became the first pharmaceutical company to provide clinical trial participants with access to their own individual clinical health data.</span>
+        </li>
+    </ul>
+    <ul class="c10 lst-kix_8r50k9q6h7rh-1 start">
+        <li class="c4"><span class="c3">Was responsible for mapping Pfizer&rsquo;s clinical trial data into HL7 Consolidated Clinical Document Architecture (C-CDA) XML documents in order to transfer the clinical data to patients for personal use while following HIPAA rules and standards.</span>
+        </li>
+        <li class="c4"><span class="c3">Exposed this transformation as RESTful web services</span></li>
+    </ul>
+    <ul class="c10 lst-kix_8r50k9q6h7rh-0">
+        <li class="c6"><span class="c3">Software Engineer on the FIREBIRD project, a web-based Java EE 5 application designed to provide an efficient, paperless process for clinical investigators to register with the FDA. </span>
+        </li>
+    </ul>
+    <ul class="c10 lst-kix_8r50k9q6h7rh-1 start">
+        <li class="c4"><span class="c3">The application back end is deployed to JBoss 5.1 and uses a Postgres 8.4 database while the front end makes extensive use of jQuery to provide a highly usable &ldquo;Web 2.0&rdquo;
+            front end. </span></li>
+        <li class="c4"><span class="c3">Employs agile methodologies to help his team through development obstacles and changes to ensure his clients&#39; needs are met.</span>
+        </li>
+    </ul>
+    <h3 class="c0"><a id="h.td810e109mnz" name="h.td810e109mnz"></a><span class="c1">General Dynamics Advanced Information Systems, Software Engineer II &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2009 - 2011</span>
+    </h3>
+    <ul class="c10 lst-kix_4y7r41elxklf-0 start">
+        <li class="c6"><span class="c3">Lead Developer on a distributed system monitoring application that provides mission-critical support to the Intelligence Community. &nbsp;</span>
+        </li>
+        <li class="c6"><span class="c3">Responsible for database and system administration, in addition to enhancing/maintaining the development environment using tools supporting code quality, integration, and version control.</span>
+        </li>
+        <li class="c6"><span class="c3">Previously served as Lead Developer on an Innovative Research and Development (IR&amp;D) project.</span>
+        </li>
+        <li class="c6"><span class="c3">Responsible for database design and implementation as well as utilizing and creating geospatial services and data. &nbsp;</span>
+        </li>
+        <li class="c6"><span class="c3">Regularly prepared and gave demos and presentations to both internal and external customers. &nbsp;</span>
+        </li>
+        <li class="c6"><span
+            class="c3">Responsible for interviewing, managing, and tasking new hires and interns.</span></li>
+    </ul>
+    <h3 class="c0"><a id="h.n7vqlz35xq7c" name="h.n7vqlz35xq7c"></a><span class="c3 c14">&nbsp;</span><span class="c1">Scytale Inc., Software Developer &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2008</span>
+    </h3>
+    <ul class="c10 lst-kix_y8ivgme9gt65-0 start">
+        <li class="c6"><span class="c3">Worked in a team that developed and maintained a database driven portal application that kept track of classified material. &nbsp;</span>
+        </li>
+        <li class="c6"><span class="c3">Teamed with engineers in the complete life cycle of software engineering from planning and architecture to development, testing and debugging. &nbsp;Front-end software of project was JavaScript driven and the back-end was driven by PL/SQL. &nbsp;</span>
+        </li>
+        <li class="c6"><span class="c3">Prepared reports regularly using Crystal Reports. &nbsp;</span></li>
+        <li class="c6"><span class="c3">Communicated one on one with customers in order to meet their requirements. &nbsp;</span>
+        </li>
+        <li class="c6"><span class="c3">Frequently was called upon to resolve problems and answer questions relating to the project. &nbsp;</span>
+        </li>
+        <li class="c6"><span class="c3">Compiled and wrote documentation of program development and revisions.</span>
+        </li>
+    </ul>
+    <h3 class="c0"><a id="h.ww3b4g6n9osl" name="h.ww3b4g6n9osl"></a><span class="c14 c3">&nbsp;</span><span class="c1">First Data, Lead Technician &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Summer 2007</span>
+    </h3>
+    <ul class="c10 lst-kix_jgo18cbktw0p-0 start">
+        <li class="c6"><span class="c3">Accountable for the performance of my team of technicians. &nbsp;</span></li>
+        <li class="c6"><span class="c3">Backed up and recovered employees&rsquo; data on their workstations nationwide using commercial products. &nbsp;</span>
+        </li>
+        <li class="c6"><span class="c3">Attended daily meetings with supervisors to report my team&rsquo;s status and performance numbers.</span>
+        </li>
+    </ul>
+    <h2 class="c5 c9"><a id="h.qt2fliogvle3" name="h.qt2fliogvle3"></a><span class="c3">&nbsp;</span><span class="c13">Education and Credentials</span>
+    </h2>
+    <h3 class="c0"><a id="h.fqjaqxppesaf" name="h.fqjaqxppesaf"></a><span class="c1 c8">Degree</span></h3>
+    <ul class="c10 lst-kix_d1oxqzx32taw-0 start">
+        <li class="c7"><span class="c3">Bachelor&rsquo;s of Science: Computer Science &ndash; Frostburg State University (2007)</span>
+        </li>
+    </ul>
+    <h2 class="c5 c9"><a id="h.kbgr15f08pnq" name="h.kbgr15f08pnq"></a><span class="c13">Tools and Technologies</span>
+    </h2>
+    <h3 class="c0"><a id="h.4terdpvpm893" name="h.4terdpvpm893"></a><span class="c1 c8">Programming Expertise</span>
+    </h3>
+    <p class="c5"><span class="c8">Java, J2EE, Struts 2, HTML, JSP, JavaScript, jQuery, Hibernate/JPA, Guice, GWT/SmartGWT, Scala, JMS, JMX, CSS, XML,EJB, Geospatial Intelligence, KML, JAX-RS, UML, AJAX, SQL, JUnit, Mockito, Scalability/Load/Performance Testing, Python, 508 Compliance</span>
+    </p>
+    <h3 class="c0"><a id="h.fzb6qflvzq2e" name="h.fzb6qflvzq2e"></a><span class="c1 c8">Application Environments</span>
+    </h3>
+    <p class="c5"><span class="c8">AWS, Tomcat, JBoss, Glassfish,</span></p>
+    <h3 class="c0"><a id="h.23eu1wsopmen" name="h.23eu1wsopmen"></a><span class="c1 c8">Databases</span></h3>
+    <p class="c5"><span class="c8">AWS, Oracle, Liquibase, PostgresSQL, SQL Server, Sybase</span></p>
+    <h3 class="c0"><a id="h.1braq9tt9n08" name="h.1braq9tt9n08"></a><span class="c1 c8">Tools:</span></h3>
+    <p class="c5"><span class="c8">ActiveMQ, Maven, Spring, Git, Subversion, IntelliJ, Eclipse, jFreeCharts, JasperReports, Hudson/Jenkins, Selenium, SoapUI, JMeter, Static Analysis Tools</span>
+    </p>
+    <h2 class="c5 c9"><a id="h.luzhane7bron" name="h.luzhane7bron"></a><span class="c13">Certifications/Specialized Courses</span>
+    </h2>
+    <ul class="c10 lst-kix_n857p6pn6v32-0 start">
+        <li class="c7"><span>ScrumAlliance Certified ScrumMaster (SM) &ndash; 2009, 2011 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        </li>
+        <li class="c7"><span>Functional Programming Principles in Scala (With Distinction) - 12/2012</span></li>
+        <li class="c7"><span>An Introduction to Interactive Programming in Python (With Distinction) - 07/2013</span>
+        </li>
+        <li class="c7"><span>Web Intelligence and Big Data (With Distinction) - 08/2013</span></li>
+        <li class="c7"><span>Design and Interpretation of Clinical Trials - 01/2014</span></li>
+    </ul>
+    <div><p class="c12 c20"><span class="c19">________________________________________________________________________________________________________&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+        class="c18">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p></div>
     </div>
 </div>

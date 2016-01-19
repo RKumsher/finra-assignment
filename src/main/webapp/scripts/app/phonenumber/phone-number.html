@@ -1,0 +1,46 @@
+<div>
+    <h2>Phone Number Alphanumeric Representation Generator</h2>
+    <jh-alert></jh-alert>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+              <form name="form">
+                  <div class="input-group">
+                      <input type="number" min="0" name="phoneNumber" class="form-control" ng-model="phoneNumber" required ng-pattern="/^(\d{7}|\d{10})$/">
+                      <span class="input-group-btn">
+                        <button type="submit" class="btn btn-primary" ng-click="generatePhoneNumbers()">
+                            <span class="glyphicon glyphicon-flash"></span> <span>Generate</span>
+                        </button>
+                      </span>
+                  </div>
+                  <div ng-show="(form.$submitted || form.phoneNumber.$touched) && (form.phoneNumber.$error.required || form.phoneNumber.$error.pattern)" class="alert alert-danger" role="alert">
+                      <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                      <span class="sr-only">Error:</span>
+                      <span ng-show="form.phoneNumber.$error.required">Phone number is required.</span>
+                      <span ng-show="form.phoneNumber.$error.pattern">Phone number must be either 7 or 10 digits.</span>
+                  </div>
+              </form>
+          </div>
+        </div>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Phone Number</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="phoneNumber in phoneNumbers">
+                <td>{{phoneNumber}}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="text-center">
+        <span>Total number of combinations: {{totalItems}}</span>
+    </div>
+    <div class="text-center">
+        <uib-pagination class="pagination-sm" total-items="totalItems" ng-model="page" ng-change="generatePhoneNumbers()"></uib-pagination>
+    </div>
+</div>
