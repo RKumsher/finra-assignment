@@ -1,6 +1,6 @@
-# finra_assignment
-
 DEPLOYED TO: https://finra-assignment.herokuapp.com/
+
+# finra_assignment
 
 Develop the following web application and deploy on Google App Engine using any language you are comfortable with. When done please submit the URL to access this application and provide access to the following Google Account to access it: “finra.es.test@gmail.com"
 
@@ -9,6 +9,7 @@ Develop the following web application and deploy on Google App Engine using any 
 - Your application should accept and validate a 7 or 10 digit phone number. 
 - Assuming a standard alpha-numeric telephone keypad please generate a list of all possible combinations of alpha-numeric phone numbers from the input phone number. Display the total count at the beginning. 
 - Implement paging for the output with each page getting it’s data from the server via AJAX.
+- All source code should be checked into github and be available for review. Please provide a link to the github project.
 
 # For example if the input number is 240 386 6106 then the output is
     Total number of combinations: <count goes here>
